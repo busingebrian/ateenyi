@@ -1,0 +1,28 @@
+body,
+html {
+  height: 100%;
+  font-family: "Inconsolata", sans-serif;
+  scroll-behavior: smooth;
+}
+
+.header {
+  min-height: 75%;
+  background: url("../images/barber.png") no-repeat center center fixed;
+  background-color: rgba(0, 0, 0, 0.80);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
+
+.w3-top,
+h4 {
+  font-family: "Poppins", sans-serif;
+}
+
+/* Shop Information section */
+.section-break {
+  min-height: 100%;
+  background: url("../images/machines.png") no-repeat center center fixed;
+  filter: grayscale(50%);
+  background-blend-mode: multiply;
+  background-size: cover;
+}
