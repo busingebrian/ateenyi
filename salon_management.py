@@ -70,8 +70,8 @@ def list_appointments():
     output = [
         {
             'id': appointment.id,
-            'customer': appointment.customer.name,
-            'service': appointment.service.name,
+            'customer': appointment.customer.name if appointment.customer else "No customer assigned",
+            'service': appointment.service.name if appointment.service else "No service assigned",
             'appointment_time': appointment.appointment_time.strftime('%Y-%m-%d %H:%M:%S'),
             'status': appointment.status
         } for appointment in appointments
