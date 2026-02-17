@@ -1,0 +1,22 @@
+##
+# ASYCUDA build customization properties (template)
+#
+# Instructions:
+# - Copy this file to: build/custom.properties
+# - Edit values to match your SOClass/EMS installation and desired build output.
+#
+# Note:
+# - ASYCUDA is built for EMS 1.4.0.3 by default (SOClass up to 2.2.31).
+# - For EMS 1.5 or 1.6 (SOClass 2.2.31+), set `so.ems.version` or pass it on the command line:
+#     ant -Dso.ems.version=1.5 createPDK
+##
+
+# Optional override. Uncomment to build against a different EMS version.
+# so.ems.version=1.4
+
+# Example placeholders (adjust/remove to match your actual Ant build scripts):
+# so.home=/opt/soclass
+# so.server.home=/opt/soclass/server
+# so.client.home=/opt/soclass/client
+# so.adk.home=/opt/soclass/adk
+
