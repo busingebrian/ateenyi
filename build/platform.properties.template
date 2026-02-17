@@ -1,0 +1,13 @@
+##
+# Platform-specific properties (template)
+#
+# Instructions:
+# - Copy this file to: build/platform.properties
+# - Edit values to match the machine where you run the build (paths, tools, etc).
+##
+
+# Example placeholders (adjust/remove to match your actual Ant build scripts):
+# java.home=/usr/lib/jvm/java-17-openjdk
+# ant.home=/usr/share/ant
+# tmp.dir=/tmp
+
