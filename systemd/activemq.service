@@ -1,0 +1,22 @@
+[Unit]
+Description=Apache ActiveMQ Classic
+After=network.target
+
+[Service]
+Type=forking
+User=activemq
+Group=activemq
+EnvironmentFile=-/etc/default/activemq
+WorkingDirectory=/opt/activemq
+
+ExecStart=/opt/activemq/bin/activemq start
+ExecStop=/opt/activemq/bin/activemq stop
+ExecReload=/opt/activemq/bin/activemq restart
+
+Restart=on-failure
+RestartSec=5
+LimitNOFILE=65536
+
+[Install]
+WantedBy=multi-user.target
+
