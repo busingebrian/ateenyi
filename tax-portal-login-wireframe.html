@@ -1,0 +1,261 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Portal Login Wireframe</title>
+  <style>
+    :root {
+      --bg: #eef2f7;
+      --card: #ffffff;
+      --text: #24324a;
+      --muted: #6b778c;
+      --line: #b8c4d6;
+      --accent: #3d4e6a;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .tag {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      font-size: 12px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      color: var(--muted);
+      border: 1px dashed var(--line);
+      padding: 6px 10px;
+      background: #fff;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .screen {
+      width: min(100%, 1100px);
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 2px dashed var(--line);
+      padding: 16px;
+    }
+
+    h1, h2 {
+      margin: 0 0 10px;
+      color: var(--accent);
+    }
+
+    h1 {
+      font-size: 21px;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+
+    .subtext {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .placeholder {
+      border: 1px dashed var(--line);
+      background: #fbfcff;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 9px;
+      min-height: 36px;
+      margin-bottom: 8px;
+    }
+
+    .row {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .link-box {
+      flex: 1;
+      border: 1px dashed var(--line);
+      background: #fbfcff;
+      padding: 9px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .spec-table {
+      border: 1px dashed var(--line);
+      background: #fcfdff;
+    }
+
+    .spec-header,
+    .spec-row {
+      display: grid;
+      grid-template-columns: 2fr 2fr 4fr 1fr 1fr;
+      border-bottom: 1px dashed var(--line);
+    }
+
+    .spec-row:last-child {
+      border-bottom: none;
+    }
+
+    .spec-header div,
+    .spec-row div {
+      border-right: 1px dashed var(--line);
+      padding: 8px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .spec-header div {
+      font-weight: 700;
+    }
+
+    .spec-header div:last-child,
+    .spec-row div:last-child {
+      border-right: none;
+    }
+
+    ul {
+      margin: 0;
+      padding-left: 14px;
+    }
+
+    li {
+      margin-bottom: 2px;
+    }
+
+    @media (max-width: 980px) {
+      .screen {
+        grid-template-columns: 1fr;
+      }
+
+      .spec-header,
+      .spec-row {
+        grid-template-columns: 1fr;
+      }
+
+      .spec-header div,
+      .spec-row div {
+        border-right: none;
+        border-bottom: 1px dashed var(--line);
+      }
+
+      .spec-header div:last-child,
+      .spec-row div:last-child {
+        border-bottom: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="tag">Login wireframe</div>
+  <main class="container">
+    <section class="screen">
+      <article class="card">
+        <h1>Tax Portal Sign In</h1>
+        <p class="subtext">Focused wireframe based on provided login form sample.</p>
+
+        <h2>Form Layout</h2>
+        <div class="placeholder">[ User Name Label ]</div>
+        <div class="placeholder">[ Text Input Field | Placeholder Text ]</div>
+        <div class="placeholder">[ Validation Message ]</div>
+
+        <div class="placeholder">[ Password Icon + Password Label ]</div>
+        <div class="placeholder">[ Password Input Field | Placeholder Text ]</div>
+        <div class="placeholder">[ Validation Message ]</div>
+
+        <div class="placeholder">[ Login Button ]</div>
+        <div class="row">
+          <div class="link-box">[ Reset Password Link ]</div>
+          <div class="link-box">[ First Time Login Link ]</div>
+        </div>
+        <div class="placeholder" style="margin-top: 8px;">[ Step 2: OTP / Authenticator Code ]</div>
+      </article>
+
+      <article class="card">
+        <h2>Field Specification</h2>
+        <div class="spec-table">
+          <div class="spec-header">
+            <div>Data Field</div>
+            <div>Data Type</div>
+            <div>Visual Element</div>
+            <div>Source</div>
+            <div>Required</div>
+          </div>
+          <div class="spec-row">
+            <div>User Name</div>
+            <div>Text/String</div>
+            <div>
+              <ul>
+                <li>Text input field</li>
+                <li>Label</li>
+                <li>Placeholder text</li>
+                <li>Validation message</li>
+              </ul>
+            </div>
+            <div>User</div>
+            <div>Yes</div>
+          </div>
+          <div class="spec-row">
+            <div>Password</div>
+            <div>Password/String</div>
+            <div>
+              <ul>
+                <li>Password icon</li>
+                <li>Password input field</li>
+                <li>Label</li>
+                <li>Placeholder field</li>
+                <li>Placeholder text</li>
+              </ul>
+            </div>
+            <div>User</div>
+            <div>Yes</div>
+          </div>
+          <div class="spec-row">
+            <div>Login Button</div>
+            <div>Action</div>
+            <div>Button</div>
+            <div>User</div>
+            <div>Yes</div>
+          </div>
+          <div class="spec-row">
+            <div>Reset Password Link</div>
+            <div>Navigation</div>
+            <div>Hyperlink</div>
+            <div>User</div>
+            <div>Yes</div>
+          </div>
+          <div class="spec-row">
+            <div>First Time Login Link</div>
+            <div>Navigation</div>
+            <div>Hyperlink</div>
+            <div>User</div>
+            <div>Yes</div>
+          </div>
+        </div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
