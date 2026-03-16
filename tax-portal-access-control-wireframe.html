@@ -1,0 +1,293 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Portal Access Control Wireframe</title>
+  <style>
+    :root {
+      --bg: #f4f6f8;
+      --card: #ffffff;
+      --text: #253046;
+      --muted: #657289;
+      --line: #b9c3d1;
+      --accent: #3a4b66;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .wireframe-tag {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      padding: 6px 10px;
+      border: 1px dashed var(--line);
+      background: #fff;
+      font-size: 12px;
+      color: var(--muted);
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+    }
+
+    .topbar {
+      height: 72px;
+      background: var(--card);
+      border-bottom: 2px solid var(--line);
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      padding: 0 20px;
+    }
+
+    .logo-block,
+    .profile-block {
+      border: 2px dashed var(--line);
+      padding: 10px 14px;
+      min-width: 180px;
+      background: #fbfcfe;
+      font-size: 14px;
+      color: var(--muted);
+    }
+
+    .layout {
+      display: grid;
+      grid-template-columns: 260px 1fr;
+      min-height: calc(100vh - 72px);
+    }
+
+    aside {
+      background: var(--card);
+      border-right: 2px solid var(--line);
+      padding: 18px;
+    }
+
+    .nav-title {
+      font-size: 13px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 12px;
+      letter-spacing: 0.6px;
+    }
+
+    .nav-item {
+      border: 2px dashed var(--line);
+      padding: 10px;
+      margin-bottom: 10px;
+      background: #fcfdff;
+      font-size: 14px;
+    }
+
+    main {
+      padding: 18px;
+    }
+
+    .page-title {
+      border: 2px dashed var(--line);
+      background: var(--card);
+      padding: 14px 16px;
+      margin-bottom: 16px;
+    }
+
+    .page-title h1 {
+      margin: 0 0 8px;
+      font-size: 20px;
+      color: var(--accent);
+    }
+
+    .page-title p {
+      margin: 0;
+      color: var(--muted);
+      font-size: 14px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 2px dashed var(--line);
+      padding: 14px;
+      min-height: 120px;
+    }
+
+    .card h2 {
+      margin: 0 0 10px;
+      font-size: 16px;
+      color: var(--accent);
+    }
+
+    .placeholder {
+      border: 1px dashed var(--line);
+      background: #fbfcfe;
+      min-height: 32px;
+      margin-bottom: 8px;
+      padding: 8px;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .span-4 { grid-column: span 4; }
+    .span-6 { grid-column: span 6; }
+    .span-8 { grid-column: span 8; }
+    .span-12 { grid-column: span 12; }
+
+    .timeline {
+      display: grid;
+      gap: 8px;
+    }
+
+    .timeline-step {
+      border: 1px dashed var(--line);
+      padding: 8px;
+      background: #fbfcfe;
+      font-size: 13px;
+      color: var(--muted);
+    }
+
+    .table-row {
+      display: grid;
+      grid-template-columns: 2fr 2fr 2fr 3fr 2fr;
+      border: 1px dashed var(--line);
+      margin-bottom: 6px;
+      background: #fbfcfe;
+    }
+
+    .table-row div {
+      padding: 8px;
+      font-size: 12px;
+      color: var(--muted);
+      border-right: 1px dashed var(--line);
+    }
+
+    .table-row div:last-child {
+      border-right: none;
+    }
+
+    @media (max-width: 1024px) {
+      .layout {
+        grid-template-columns: 1fr;
+      }
+
+      aside {
+        border-right: none;
+        border-bottom: 2px solid var(--line);
+      }
+
+      .span-4,
+      .span-6,
+      .span-8 {
+        grid-column: span 12;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="wireframe-tag">Low-fidelity wireframe</div>
+
+  <header class="topbar">
+    <div class="logo-block">[ Tax Authority Logo ]</div>
+    <div class="profile-block">[ Signed in user | Role | Session timer ]</div>
+  </header>
+
+  <div class="layout">
+    <aside>
+      <div class="nav-title">Portal Navigation</div>
+      <div class="nav-item">Dashboard</div>
+      <div class="nav-item">Tax Filings</div>
+      <div class="nav-item">Payments</div>
+      <div class="nav-item"><strong>Access Control</strong></div>
+      <div class="nav-item">Audit & Activity</div>
+      <div class="nav-item">Admin Settings</div>
+    </aside>
+
+    <main>
+      <section class="page-title">
+        <h1>Access Control Center</h1>
+        <p>Manage authentication, role permissions, access requests, and approvals for tax portal users.</p>
+      </section>
+
+      <section class="grid">
+        <article class="card span-4">
+          <h2>1) Authentication Gate</h2>
+          <div class="placeholder">[ Username / Tax ID input ]</div>
+          <div class="placeholder">[ Password input ]</div>
+          <div class="placeholder">[ MFA challenge: OTP / Auth app ]</div>
+          <div class="placeholder">[ Login status + failed-attempt lockout ]</div>
+        </article>
+
+        <article class="card span-8">
+          <h2>2) Access Request Form</h2>
+          <div class="placeholder">[ Requestor details + department ]</div>
+          <div class="placeholder">[ Select target module: Filing / Payments / Refunds / Audit ]</div>
+          <div class="placeholder">[ Select requested role: Viewer / Officer / Supervisor / Admin ]</div>
+          <div class="placeholder">[ Business justification + ticket reference ]</div>
+          <div class="placeholder">[ Submit request ]</div>
+        </article>
+
+        <article class="card span-6">
+          <h2>3) Role and Permission Matrix</h2>
+          <div class="placeholder">[ Feature list on rows ]</div>
+          <div class="placeholder">[ Roles on columns ]</div>
+          <div class="placeholder">[ Checkboxes for read / write / approve / export ]</div>
+          <div class="placeholder">[ Save policy revision ]</div>
+        </article>
+
+        <article class="card span-6">
+          <h2>4) Approval Workflow</h2>
+          <div class="timeline">
+            <div class="timeline-step">Step 1: Team Lead review</div>
+            <div class="timeline-step">Step 2: Security Officer validation</div>
+            <div class="timeline-step">Step 3: Tax Operations final approval</div>
+            <div class="timeline-step">Step 4: Auto-provision + notify user</div>
+          </div>
+        </article>
+
+        <article class="card span-12">
+          <h2>5) Audit Log (Access Events)</h2>
+          <div class="table-row">
+            <div><strong>User</strong></div>
+            <div><strong>Action</strong></div>
+            <div><strong>Module</strong></div>
+            <div><strong>Reason / Ticket</strong></div>
+            <div><strong>Timestamp</strong></div>
+          </div>
+          <div class="table-row">
+            <div>[ Officer A ]</div>
+            <div>[ Granted role ]</div>
+            <div>[ Refunds ]</div>
+            <div>[ Incident INC-1042 ]</div>
+            <div>[ 2026-03-16 09:34 ]</div>
+          </div>
+          <div class="table-row">
+            <div>[ User B ]</div>
+            <div>[ MFA failed x3 ]</div>
+            <div>[ Login ]</div>
+            <div>[ Auto lock triggered ]</div>
+            <div>[ 2026-03-16 10:01 ]</div>
+          </div>
+        </article>
+
+        <article class="card span-12">
+          <h2>6) Emergency (Break-Glass) Access</h2>
+          <div class="placeholder">[ Elevated temporary access toggle ]</div>
+          <div class="placeholder">[ Mandatory reason + manager callback ]</div>
+          <div class="placeholder">[ Duration limit + automatic revocation ]</div>
+          <div class="placeholder">[ Force audit snapshot ]</div>
+        </article>
+      </section>
+    </main>
+  </div>
+</body>
+</html>
