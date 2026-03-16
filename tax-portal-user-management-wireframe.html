@@ -239,7 +239,7 @@
           <div class="step-list">
             <div class="step">Step 1: Identification → HR/ERP feed creates user profile + user category</div>
             <div class="step">Step 2: Authentication → username + password + OTP + account active check</div>
-            <div class="step">Step 3: Authorization → role/group/station hierarchy for approvals</div>
+            <div class="step">Step 3: Authorization → role/group/station hierarchy + emergency acting-role override (time-bound)</div>
             <div class="step">Step 4: Access Enforcement → PEP interception + decision enforcement + session kill on new machine</div>
             <div class="step">Step 5: Auditing → trace all actions to specific user account</div>
           </div>
@@ -267,6 +267,7 @@
           <div class="placeholder">[ Role + permissions resolver ]</div>
           <div class="placeholder">[ Group + station mapping ]</div>
           <div class="placeholder">[ Least privilege + default deny ]</div>
+          <div class="placeholder">[ Temporary acting role override with start/end time ]</div>
         </article>
         <article class="card span-3">
           <h3>Enforcement Controls</h3>
@@ -329,10 +330,22 @@
           <div class="placeholder">[ Username ]</div>
           <div class="placeholder">[ Role(s) ]</div>
           <div class="placeholder">[ User Group ]</div>
-          <div class="placeholder">[ Assignment mode: Role OR Group ]</div>
+          <div class="placeholder">[ Standard assignment mode: Role OR Group ]</div>
           <div class="placeholder">[ Station/Department/Supervisor ]</div>
           <div class="placeholder">[ Reason + Effective dates ]</div>
           <div class="placeholder button-like">[ Activate ] [ Deactivate ] [ Suspend ]</div>
+        </div>
+        <div class="form-card">
+          <div class="form-title">Emergency Acting Role Assignment</div>
+          <div class="placeholder">[ Username ]</div>
+          <div class="placeholder">[ Existing User Group (kept active) ]</div>
+          <div class="placeholder">[ Temporary Role: Acting Manager ]</div>
+          <div class="placeholder">[ Effective Start Date/Time ]</div>
+          <div class="placeholder">[ Effective End Date/Time ]</div>
+          <div class="placeholder">[ Business Justification + Ticket/Incident Ref ]</div>
+          <div class="placeholder">[ Approvals: Supervisor + Security Administrator ]</div>
+          <div class="placeholder">[ Auto-expire and revert to original role/group ]</div>
+          <div class="placeholder button-like">[ Grant Temporary Acting Role ]</div>
         </div>
       </div>
     </section>
