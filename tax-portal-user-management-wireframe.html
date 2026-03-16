@@ -1,0 +1,377 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eTAX2 User Management Wireframe</title>
+  <style>
+    :root {
+      --bg: #eef2f7;
+      --card: #ffffff;
+      --line: #b8c4d6;
+      --text: #253046;
+      --muted: #67758d;
+      --accent: #3a4b66;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .tag {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      border: 1px dashed var(--line);
+      background: #fff;
+      color: var(--muted);
+      padding: 6px 10px;
+      font-size: 12px;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .page {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 22px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 2px dashed var(--line);
+      padding: 14px;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 8px;
+      color: var(--accent);
+      text-align: center;
+    }
+
+    h1 { font-size: 24px; }
+    h2 { font-size: 17px; }
+    h3 { font-size: 14px; }
+
+    .sub {
+      margin: 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .nav {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      gap: 8px;
+      flex-wrap: wrap;
+    }
+
+    .nav a {
+      text-decoration: none;
+      border: 1px dashed var(--line);
+      color: var(--accent);
+      background: #fbfcff;
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+
+    .meta-grid {
+      display: grid;
+      grid-template-columns: repeat(4, 1fr);
+      gap: 8px;
+      margin-top: 10px;
+    }
+
+    .meta {
+      border: 1px dashed var(--line);
+      background: #fbfcff;
+      padding: 8px;
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+    }
+
+    .section-grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 12px;
+    }
+
+    .span-3 { grid-column: span 3; }
+    .span-4 { grid-column: span 4; }
+    .span-6 { grid-column: span 6; }
+    .span-8 { grid-column: span 8; }
+    .span-12 { grid-column: span 12; }
+
+    .placeholder {
+      border: 1px dashed var(--line);
+      background: #fbfcff;
+      color: var(--muted);
+      padding: 8px;
+      min-height: 34px;
+      margin-bottom: 8px;
+      font-size: 12px;
+    }
+
+    .step-list {
+      display: grid;
+      gap: 8px;
+    }
+
+    .step {
+      border: 1px dashed var(--line);
+      background: #fbfcff;
+      color: var(--muted);
+      padding: 8px;
+      font-size: 12px;
+    }
+
+    .lane-header {
+      font-size: 12px;
+      text-transform: uppercase;
+      color: var(--muted);
+      margin-bottom: 8px;
+      text-align: center;
+      letter-spacing: 0.4px;
+    }
+
+    .form-grid {
+      display: grid;
+      grid-template-columns: repeat(3, 1fr);
+      gap: 10px;
+    }
+
+    .form-card {
+      border: 1px dashed var(--line);
+      background: #fbfcff;
+      padding: 10px;
+    }
+
+    .form-title {
+      margin: 0 0 8px;
+      text-align: center;
+      font-size: 13px;
+      color: var(--accent);
+      font-weight: 700;
+    }
+
+    .button-like {
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    @media (max-width: 1100px) {
+      .meta-grid,
+      .form-grid,
+      .two-col {
+        grid-template-columns: 1fr 1fr;
+      }
+
+      .span-3,
+      .span-4,
+      .span-6,
+      .span-8 {
+        grid-column: span 12;
+      }
+    }
+
+    @media (max-width: 760px) {
+      .meta-grid,
+      .form-grid,
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="tag">Proper Wireframe v1.0</div>
+  <main class="page">
+    <section class="card">
+      <h1>eTAX2 User Management & Access Control Wireframe</h1>
+      <p class="sub">Based on URS: Identification, Authentication, Authorization, Access Enforcement, and Auditing & Accountability</p>
+      <div class="meta-grid">
+        <div class="meta">Requirement Name: User Management</div>
+        <div class="meta">Business Owner: BPR</div>
+        <div class="meta">Version: 1.0</div>
+        <div class="meta">Scope: eTAX2</div>
+      </div>
+      <div class="nav">
+        <a href="./tax-portal-user-management-wireframe.html">User Management Wireframe</a>
+        <a href="./tax-portal-access-control-wireframe.html">Access Control Wireframe</a>
+        <a href="./tax-portal-login-wireframe.html">Login Wireframe</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>1) End-to-End Access Control Process</h2>
+      <div class="section-grid">
+        <article class="card span-6">
+          <div class="lane-header">External User Journey (Taxpayer / Agent / Auditor)</div>
+          <div class="step-list">
+            <div class="step">Step 1: Identification → user category + first-time registration or migrated account</div>
+            <div class="step">Step 2: Authentication → username + password + OTP (SMS / Email / Authenticator / WhatsApp)</div>
+            <div class="step">Step 3: Authorization → role check and policy evaluation (default deny)</div>
+            <div class="step">Step 4: Access Enforcement → allow/deny action, session validation, auto lock controls</div>
+            <div class="step">Step 5: Auditing → login/access/activity logs with timestamp and result</div>
+          </div>
+        </article>
+        <article class="card span-6">
+          <div class="lane-header">Internal User Journey (URA Staff)</div>
+          <div class="step-list">
+            <div class="step">Step 1: Identification → HR/ERP feed creates user profile + user category</div>
+            <div class="step">Step 2: Authentication → username + password + OTP + account active check</div>
+            <div class="step">Step 3: Authorization → role/group/station hierarchy for approvals</div>
+            <div class="step">Step 4: Access Enforcement → PEP interception + decision enforcement + session kill on new machine</div>
+            <div class="step">Step 5: Auditing → trace all actions to specific user account</div>
+          </div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>2) Core Security Controls Dashboard</h2>
+      <div class="section-grid">
+        <article class="card span-3">
+          <h3>Identification Controls</h3>
+          <div class="placeholder">[ Unique username check ]</div>
+          <div class="placeholder">[ Active user validation ]</div>
+          <div class="placeholder">[ Internal user source: HR/ERP sync ]</div>
+        </article>
+        <article class="card span-3">
+          <h3>Authentication Controls</h3>
+          <div class="placeholder">[ Username + password gate ]</div>
+          <div class="placeholder">[ OTP challenge (multi-channel) ]</div>
+          <div class="placeholder">[ Failed attempts lock (temporary + account lock) ]</div>
+        </article>
+        <article class="card span-3">
+          <h3>Authorization Controls</h3>
+          <div class="placeholder">[ Role + permissions resolver ]</div>
+          <div class="placeholder">[ Group + station mapping ]</div>
+          <div class="placeholder">[ Least privilege + default deny ]</div>
+        </article>
+        <article class="card span-3">
+          <h3>Enforcement Controls</h3>
+          <div class="placeholder">[ PEP check before protected action ]</div>
+          <div class="placeholder">[ Block restricted pages/actions ]</div>
+          <div class="placeholder">[ Inactivity timeout + session replacement ]</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3) Form Wireframes (Internal + External)</h2>
+      <div class="form-grid">
+        <div class="form-card">
+          <div class="form-title">Login Form</div>
+          <div class="placeholder">[ Username ]</div>
+          <div class="placeholder">[ Password ]</div>
+          <div class="placeholder">[ OTP ]</div>
+          <div class="placeholder button-like">[ Login Button ]</div>
+          <div class="placeholder button-like">[ Reset Password Link ]</div>
+          <div class="placeholder button-like">[ First-Time Login Link ]</div>
+        </div>
+        <div class="form-card">
+          <div class="form-title">Reset/Forgot Password</div>
+          <div class="placeholder">[ Username ]</div>
+          <div class="placeholder">[ Email ]</div>
+          <div class="placeholder">[ Phone Number ]</div>
+          <div class="placeholder">[ OTP ]</div>
+          <div class="placeholder">[ New Password + Confirm ]</div>
+          <div class="placeholder button-like">[ Submit ]</div>
+        </div>
+        <div class="form-card">
+          <div class="form-title">First-Time Login</div>
+          <div class="placeholder">[ Username ]</div>
+          <div class="placeholder">[ Password ]</div>
+          <div class="placeholder">[ OTP ]</div>
+          <div class="placeholder">[ Password Strength Bar ]</div>
+          <div class="placeholder button-like">[ Submit ]</div>
+        </div>
+        <div class="form-card">
+          <div class="form-title">User Creation (Internal)</div>
+          <div class="placeholder">[ Username + Station ]</div>
+          <div class="placeholder">[ Designation + Department (read-only) ]</div>
+          <div class="placeholder">[ Supervisor Name + Location (read-only) ]</div>
+          <div class="placeholder">[ Role(s) + User Group ]</div>
+          <div class="placeholder button-like">[ Create User ]</div>
+        </div>
+        <div class="form-card">
+          <div class="form-title">User Group Creation</div>
+          <div class="placeholder">[ Group Name (unique) ]</div>
+          <div class="placeholder">[ Roles ]</div>
+          <div class="placeholder button-like">[ Save Group ]</div>
+          <div class="placeholder">[ Assign/Remove permissions ]</div>
+          <div class="placeholder">[ Add/Remove users ]</div>
+        </div>
+        <div class="form-card">
+          <div class="form-title">Activation / Deactivation / Suspension</div>
+          <div class="placeholder">[ Username ]</div>
+          <div class="placeholder">[ Role(s) + User Group ]</div>
+          <div class="placeholder">[ Station/Department/Supervisor ]</div>
+          <div class="placeholder button-like">[ Activate ] [ Deactivate ] [ Suspend ]</div>
+          <div class="placeholder">[ Reason + Effective dates ]</div>
+        </div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>4) Access Decision + Audit Monitoring</h2>
+      <div class="two-col">
+        <article class="card">
+          <h3>Policy Enforcement Decision Panel</h3>
+          <div class="placeholder">[ Request: user/action/resource ]</div>
+          <div class="placeholder">[ Decision: allow or deny ]</div>
+          <div class="placeholder">[ Denial message if insufficient permission ]</div>
+          <div class="placeholder">[ Enforcement status across API + UI modules ]</div>
+        </article>
+        <article class="card">
+          <h3>Audit & Accountability Panel</h3>
+          <div class="placeholder">[ Event feed: login/logout/access/modification/role change ]</div>
+          <div class="placeholder">[ Mandatory fields: user ID, resource, action, timestamp, result ]</div>
+          <div class="placeholder">[ Flag suspicious actions ]</div>
+          <div class="placeholder">[ Compliance review + incident detection queue ]</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>5) Notification Templates</h2>
+      <div class="section-grid">
+        <article class="card span-4">
+          <h3>Account Creation</h3>
+          <div class="placeholder">[ Subject: Account Creation Notification ]</div>
+          <div class="placeholder">[ Username + login URL + first login password change notice ]</div>
+        </article>
+        <article class="card span-4">
+          <h3>Account Deactivation</h3>
+          <div class="placeholder">[ Subject: Account Deactivation Notification ]</div>
+          <div class="placeholder">[ Access removed + support contact ]</div>
+        </article>
+        <article class="card span-4">
+          <h3>Account Suspension</h3>
+          <div class="placeholder">[ Subject: Account Suspension Notification ]</div>
+          <div class="placeholder">[ Suspension period + auto-restore info ]</div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>
