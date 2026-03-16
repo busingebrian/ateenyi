@@ -101,12 +101,14 @@
       margin: 0 0 8px;
       font-size: 20px;
       color: var(--accent);
+      text-align: center;
     }
 
     .page-title p {
       margin: 0;
       color: var(--muted);
       font-size: 14px;
+      text-align: center;
     }
 
     .wireframe-nav {
@@ -114,6 +116,7 @@
       display: flex;
       gap: 8px;
       flex-wrap: wrap;
+      justify-content: center;
     }
 
     .wireframe-nav a {
@@ -142,6 +145,7 @@
       margin: 0 0 10px;
       font-size: 16px;
       color: var(--accent);
+      text-align: center;
     }
 
     .placeholder {
@@ -152,6 +156,11 @@
       padding: 8px;
       font-size: 13px;
       color: var(--muted);
+    }
+
+    .button-placeholder {
+      text-align: center;
+      font-weight: 600;
     }
 
     .span-4 { grid-column: span 4; }
@@ -243,9 +252,9 @@
           <h2>1) Login Form Wireframe</h2>
           <div class="placeholder">[ User Name label + text input + placeholder + validation message ]</div>
           <div class="placeholder">[ Password icon + label + password input + placeholder + validation message ]</div>
-          <div class="placeholder">[ Login button ]</div>
-          <div class="placeholder">[ Reset Password link ]</div>
-          <div class="placeholder">[ First Time Login link ]</div>
+          <div class="placeholder button-placeholder">[ Login button ]</div>
+          <div class="placeholder button-placeholder">[ Reset Password link ]</div>
+          <div class="placeholder button-placeholder">[ First Time Login link ]</div>
           <div class="placeholder">[ Step 2 authentication: OTP / Authenticator app ]</div>
         </article>
 
@@ -255,7 +264,7 @@
           <div class="placeholder">[ Select target module: Filing / Payments / Refunds / Audit ]</div>
           <div class="placeholder">[ Select requested role: Viewer / Officer / Supervisor / Admin ]</div>
           <div class="placeholder">[ Business justification + ticket reference ]</div>
-          <div class="placeholder">[ Submit request ]</div>
+          <div class="placeholder button-placeholder">[ Submit request ]</div>
         </article>
 
         <article class="card span-6">
