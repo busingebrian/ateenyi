@@ -191,48 +191,6 @@
       border-right: none;
     }
 
-    .spec-table {
-      border: 1px dashed var(--line);
-      background: #fcfdff;
-    }
-
-    .spec-table-header,
-    .spec-table-row {
-      display: grid;
-      grid-template-columns: 2fr 2fr 4fr 1fr 1fr;
-      border-bottom: 1px dashed var(--line);
-    }
-
-    .spec-table-row:last-child {
-      border-bottom: none;
-    }
-
-    .spec-table-header div,
-    .spec-table-row div {
-      padding: 8px;
-      font-size: 12px;
-      color: var(--muted);
-      border-right: 1px dashed var(--line);
-    }
-
-    .spec-table-header div {
-      font-weight: bold;
-    }
-
-    .spec-table-header div:last-child,
-    .spec-table-row div:last-child {
-      border-right: none;
-    }
-
-    .spec-list {
-      margin: 0;
-      padding-left: 16px;
-    }
-
-    .spec-list li {
-      margin-bottom: 2px;
-    }
-
     @media (max-width: 1024px) {
       .layout {
         grid-template-columns: 1fr;
@@ -247,22 +205,6 @@
       .span-6,
       .span-8 {
         grid-column: span 12;
-      }
-
-      .spec-table-header,
-      .spec-table-row {
-        grid-template-columns: 1fr;
-      }
-
-      .spec-table-header div,
-      .spec-table-row div {
-        border-right: none;
-        border-bottom: 1px dashed var(--line);
-      }
-
-      .spec-table-header div:last-child,
-      .spec-table-row div:last-child {
-        border-bottom: none;
       }
     }
   </style>
@@ -297,7 +239,7 @@
       </section>
 
       <section class="grid">
-        <article class="card span-6">
+        <article class="card span-12">
           <h2>1) Login Form Wireframe</h2>
           <div class="placeholder">[ User Name label + text input + placeholder + validation message ]</div>
           <div class="placeholder">[ Password icon + label + password input + placeholder + validation message ]</div>
@@ -307,71 +249,8 @@
           <div class="placeholder">[ Step 2 authentication: OTP / Authenticator app ]</div>
         </article>
 
-        <article class="card span-6">
-          <h2>2) Login Field Specification (From Sample)</h2>
-          <div class="spec-table">
-            <div class="spec-table-header">
-              <div>Data Field</div>
-              <div>Data Type</div>
-              <div>Visual Element</div>
-              <div>Source</div>
-              <div>Required</div>
-            </div>
-            <div class="spec-table-row">
-              <div>User Name</div>
-              <div>Text/String</div>
-              <div>
-                <ul class="spec-list">
-                  <li>Text input field</li>
-                  <li>Label</li>
-                  <li>Placeholder text</li>
-                  <li>Validation message</li>
-                </ul>
-              </div>
-              <div>User</div>
-              <div>Yes</div>
-            </div>
-            <div class="spec-table-row">
-              <div>Password</div>
-              <div>Password/String</div>
-              <div>
-                <ul class="spec-list">
-                  <li>Password icon</li>
-                  <li>Password input field</li>
-                  <li>Label</li>
-                  <li>Placeholder field</li>
-                  <li>Placeholder text</li>
-                </ul>
-              </div>
-              <div>User</div>
-              <div>Yes</div>
-            </div>
-            <div class="spec-table-row">
-              <div>Login Button</div>
-              <div>Action</div>
-              <div>Button</div>
-              <div>User</div>
-              <div>Yes</div>
-            </div>
-            <div class="spec-table-row">
-              <div>Reset Password Link</div>
-              <div>Navigation</div>
-              <div>Hyperlink</div>
-              <div>User</div>
-              <div>Yes</div>
-            </div>
-            <div class="spec-table-row">
-              <div>First Time Login Link</div>
-              <div>Navigation</div>
-              <div>Hyperlink</div>
-              <div>User</div>
-              <div>Yes</div>
-            </div>
-          </div>
-        </article>
-
         <article class="card span-12">
-          <h2>3) Access Request Form</h2>
+          <h2>2) Access Request Form</h2>
           <div class="placeholder">[ Requestor details + department ]</div>
           <div class="placeholder">[ Select target module: Filing / Payments / Refunds / Audit ]</div>
           <div class="placeholder">[ Select requested role: Viewer / Officer / Supervisor / Admin ]</div>
@@ -380,7 +259,7 @@
         </article>
 
         <article class="card span-6">
-          <h2>4) Role and Permission Matrix</h2>
+          <h2>3) Role and Permission Matrix</h2>
           <div class="placeholder">[ Feature list on rows ]</div>
           <div class="placeholder">[ Roles on columns ]</div>
           <div class="placeholder">[ Checkboxes for read / write / approve / export ]</div>
@@ -388,7 +267,7 @@
         </article>
 
         <article class="card span-6">
-          <h2>5) Approval Workflow</h2>
+          <h2>4) Approval Workflow</h2>
           <div class="timeline">
             <div class="timeline-step">Step 1: Team Lead review</div>
             <div class="timeline-step">Step 2: Security Officer validation</div>
@@ -398,7 +277,7 @@
         </article>
 
         <article class="card span-12">
-          <h2>6) Audit Log (Access Events)</h2>
+          <h2>5) Audit Log (Access Events)</h2>
           <div class="table-row">
             <div><strong>User</strong></div>
             <div><strong>Action</strong></div>
@@ -423,7 +302,7 @@
         </article>
 
         <article class="card span-12">
-          <h2>7) Emergency (Break-Glass) Access</h2>
+          <h2>6) Emergency (Break-Glass) Access</h2>
           <div class="placeholder">[ Elevated temporary access toggle ]</div>
           <div class="placeholder">[ Mandatory reason + manager callback ]</div>
           <div class="placeholder">[ Duration limit + automatic revocation ]</div>
