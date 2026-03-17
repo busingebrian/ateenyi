@@ -1,0 +1,315 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>eTAX2 User Management - Executive Wireframe</title>
+  <style>
+    :root {
+      --bg: #edf2f8;
+      --card: #ffffff;
+      --line: #bcc8d8;
+      --text: #223047;
+      --muted: #65758f;
+      --accent: #334761;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .tag {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      border: 1px dashed var(--line);
+      background: #fff;
+      color: var(--muted);
+      padding: 6px 10px;
+      font-size: 11px;
+      letter-spacing: 0.5px;
+      text-transform: uppercase;
+    }
+
+    .container {
+      max-width: 1240px;
+      margin: 0 auto;
+      padding: 22px;
+      display: grid;
+      gap: 14px;
+    }
+
+    .card {
+      border: 2px dashed var(--line);
+      background: var(--card);
+      padding: 14px;
+    }
+
+    h1, h2, h3 {
+      margin: 0 0 8px;
+      text-align: center;
+      color: var(--accent);
+    }
+
+    h1 { font-size: 24px; }
+    h2 { font-size: 18px; }
+    h3 { font-size: 14px; }
+
+    .subtitle {
+      margin: 0;
+      text-align: center;
+      color: var(--muted);
+      font-size: 13px;
+    }
+
+    .nav {
+      margin-top: 12px;
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+    }
+
+    .nav a {
+      text-decoration: none;
+      border: 1px dashed var(--line);
+      background: #f8fbff;
+      color: var(--accent);
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+
+    .grid {
+      display: grid;
+      grid-template-columns: repeat(12, 1fr);
+      gap: 12px;
+    }
+
+    .span-3 { grid-column: span 3; }
+    .span-4 { grid-column: span 4; }
+    .span-6 { grid-column: span 6; }
+    .span-8 { grid-column: span 8; }
+    .span-12 { grid-column: span 12; }
+
+    .chip-row {
+      display: flex;
+      justify-content: center;
+      flex-wrap: wrap;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .chip {
+      border: 1px dashed var(--line);
+      background: #f8fbff;
+      padding: 6px 10px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .lane-title {
+      font-size: 12px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      text-align: center;
+      color: var(--muted);
+      margin-bottom: 8px;
+    }
+
+    .step {
+      border: 1px dashed var(--line);
+      background: #f8fbff;
+      color: var(--muted);
+      font-size: 12px;
+      padding: 8px;
+      margin-bottom: 8px;
+      min-height: 34px;
+    }
+
+    .step.button {
+      text-align: center;
+      font-weight: 600;
+    }
+
+    .metric {
+      border: 1px dashed var(--line);
+      background: #f8fbff;
+      min-height: 78px;
+      display: grid;
+      place-items: center;
+      text-align: center;
+      padding: 8px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .timeline {
+      display: grid;
+      gap: 8px;
+    }
+
+    .timeline-item {
+      border: 1px dashed var(--line);
+      background: #f8fbff;
+      padding: 8px;
+      color: var(--muted);
+      font-size: 12px;
+    }
+
+    .two-col {
+      display: grid;
+      grid-template-columns: 1fr 1fr;
+      gap: 10px;
+    }
+
+    @media (max-width: 1050px) {
+      .span-3, .span-4, .span-6, .span-8 {
+        grid-column: span 12;
+      }
+
+      .two-col {
+        grid-template-columns: 1fr;
+      }
+    }
+  </style>
+</head>
+<body>
+  <div class="tag">Executive Presentation</div>
+  <main class="container">
+    <section class="card">
+      <h1>eTAX2 Access Control & User Management</h1>
+      <p class="subtitle">Stakeholder view aligned to TOGAF (business alignment, security, standardization) and IA principles (clear hierarchy, predictable flows, consistent navigation)</p>
+      <div class="chip-row">
+        <div class="chip">Business Owner: BPR</div>
+        <div class="chip">Requirement: User Management</div>
+        <div class="chip">Version: 1.0</div>
+        <div class="chip">Scope: eTAX2</div>
+      </div>
+      <div class="nav">
+        <a href="./tax-portal-user-management-executive-wireframe.html">Executive Wireframe</a>
+        <a href="./tax-portal-user-management-wireframe.html">Detailed Wireframe</a>
+        <a href="./tax-portal-access-control-wireframe.html">Access Control Wireframe</a>
+        <a href="./tax-portal-login-wireframe.html">Login Wireframe</a>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>1) Who This Experience Serves</h2>
+      <div class="grid">
+        <article class="card span-6">
+          <div class="lane-title">External Users</div>
+          <div class="step">[ Taxpayers ] [ Tax Agents ] [ Tax Auditors ]</div>
+          <div class="step">Goal: Fast, secure access to own services and profile information</div>
+          <div class="step">Need: Clear login, password recovery, and predictable access outcomes</div>
+        </article>
+        <article class="card span-6">
+          <div class="lane-title">Internal Users</div>
+          <div class="step">[ Commissioner General ] [ Commissioners ] [ Assistant Commissioners ]</div>
+          <div class="step">[ Managers ] [ Supervisors ] [ Officers ] [ STEs ]</div>
+          <div class="step">Goal: Controlled operations based on role, group, and station hierarchy</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>2) Experience Flow (Executive Journey)</h2>
+      <div class="grid">
+        <article class="card span-4">
+          <h3>Identify</h3>
+          <div class="step">User profile exists or is created (registration or HR/ERP feed)</div>
+          <div class="step">Unique user identity is validated</div>
+        </article>
+        <article class="card span-4">
+          <h3>Authenticate</h3>
+          <div class="step">Username + Password + OTP</div>
+          <div class="step">Auto lock after failed attempts and inactivity controls</div>
+        </article>
+        <article class="card span-4">
+          <h3>Authorize & Enforce</h3>
+          <div class="step">Role/group/station policies decide access</div>
+          <div class="step">System allows, denies, or blocks protected actions</div>
+        </article>
+      </div>
+      <div class="timeline">
+        <div class="timeline-item">Every critical event is logged: login, logout, access attempts, modifications, permission changes</div>
+        <div class="timeline-item">Every action is traceable to a user account for accountability and audit review</div>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>3) Key Screens Snapshot (Low-Fidelity)</h2>
+      <div class="grid">
+        <article class="card span-6">
+          <h3>Login + OTP</h3>
+          <div class="step">[ Username ]</div>
+          <div class="step">[ Password ]</div>
+          <div class="step">[ OTP Verification ]</div>
+          <div class="step">[ Error/lockout guidance + validation messages ]</div>
+          <div class="two-col">
+            <div class="step button">[ Reset Password ]</div>
+            <div class="step button">[ First Time Login ]</div>
+          </div>
+          <div class="step button">[ Login (Primary Action - Final Step) ]</div>
+        </article>
+        <article class="card span-6">
+          <h3>User & Access Administration</h3>
+          <div class="step">[ Create User ] [ Assign Role(s) ] [ Assign Group ]</div>
+          <div class="step">[ Attach User to Station Hierarchy ]</div>
+          <div class="step">[ Activate ] [ Deactivate ] [ Suspend ]</div>
+          <div class="step">[ Emergency override: assign Acting Manager role for defined period ]</div>
+          <div class="step">[ Enforce Password Policy + Expiry + Complexity ]</div>
+        </article>
+        <article class="card span-6">
+          <h3>Access Decision & Blocking</h3>
+          <div class="step">[ Request resource/action ]</div>
+          <div class="step">[ Policy evaluation ]</div>
+          <div class="step">[ Allow or Deny ]</div>
+          <div class="step">[ Clear access denied message ]</div>
+        </article>
+        <article class="card span-6">
+          <h3>Audit & Monitoring</h3>
+          <div class="step">[ Security event stream ]</div>
+          <div class="step">[ Filter by user / action / time ]</div>
+          <div class="step">[ Flag suspicious behavior ]</div>
+          <div class="step">[ Incident escalation ]</div>
+        </article>
+      </div>
+    </section>
+
+    <section class="card">
+      <h2>4) Outcomes & Governance View</h2>
+      <div class="grid">
+        <div class="metric span-3">Confidentiality protected by role-based access</div>
+        <div class="metric span-3">Least privilege enforced by policy defaults</div>
+        <div class="metric span-3">Operational traceability through secure audit trail</div>
+        <div class="metric span-3">Consistent enforcement across UI and APIs</div>
+      </div>
+      <div class="grid" style="margin-top:10px;">
+        <article class="card span-4">
+          <h3>Controls</h3>
+          <div class="step">[ Lockout threshold ] [ Session timeout ]</div>
+          <div class="step">[ Password expiry reminders ]</div>
+          <div class="step">[ Time-bound temporary role with approval and auto-revert ]</div>
+        </article>
+        <article class="card span-4">
+          <h3>Notifications</h3>
+          <div class="step">[ Account Created ] [ Deactivated ] [ Suspended ]</div>
+          <div class="step">[ Include reason, timeframe, support contact ]</div>
+        </article>
+        <article class="card span-4">
+          <h3>Compliance Readiness</h3>
+          <div class="step">[ Periodic audit reviews ]</div>
+          <div class="step">[ Investigation-friendly evidence trail ]</div>
+        </article>
+      </div>
+    </section>
+  </main>
+</body>
+</html>

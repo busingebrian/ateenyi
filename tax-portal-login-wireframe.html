@@ -1,0 +1,189 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Tax Portal Login Wireframe</title>
+  <style>
+    :root {
+      --bg: #eef2f7;
+      --card: #ffffff;
+      --text: #24324a;
+      --muted: #6b778c;
+      --line: #b8c4d6;
+      --accent: #3d4e6a;
+    }
+
+    * {
+      box-sizing: border-box;
+      font-family: Arial, Helvetica, sans-serif;
+    }
+
+    body {
+      margin: 0;
+      background: var(--bg);
+      color: var(--text);
+    }
+
+    .tag {
+      position: fixed;
+      top: 10px;
+      right: 10px;
+      font-size: 12px;
+      letter-spacing: 0.4px;
+      text-transform: uppercase;
+      color: var(--muted);
+      border: 1px dashed var(--line);
+      padding: 6px 10px;
+      background: #fff;
+    }
+
+    .container {
+      min-height: 100vh;
+      display: grid;
+      place-items: center;
+      padding: 24px;
+    }
+
+    .screen {
+      width: min(100%, 760px);
+      display: grid;
+      grid-template-columns: 1fr;
+      gap: 16px;
+    }
+
+    .card {
+      background: var(--card);
+      border: 2px dashed var(--line);
+      padding: 16px;
+    }
+
+    h1, h2 {
+      margin: 0 0 10px;
+      color: var(--accent);
+      text-align: center;
+    }
+
+    h1 {
+      font-size: 21px;
+    }
+
+    h2 {
+      font-size: 16px;
+    }
+
+    .subtext {
+      margin: 0 0 14px;
+      color: var(--muted);
+      font-size: 13px;
+      text-align: center;
+    }
+
+    .wireframe-nav {
+      margin: 0 0 14px;
+      display: flex;
+      gap: 8px;
+      flex-wrap: wrap;
+      justify-content: center;
+    }
+
+    .wireframe-nav a {
+      border: 1px dashed var(--line);
+      background: #fbfcff;
+      color: var(--accent);
+      text-decoration: none;
+      padding: 6px 10px;
+      font-size: 12px;
+    }
+
+    .placeholder {
+      border: 1px dashed var(--line);
+      background: #fbfcff;
+      color: var(--muted);
+      font-size: 13px;
+      padding: 9px;
+      min-height: 36px;
+      margin-bottom: 8px;
+    }
+
+    .flow-note {
+      border: 1px dashed var(--line);
+      background: #f5f9ff;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+      padding: 8px;
+      margin-bottom: 10px;
+    }
+
+    .group-label {
+      margin: 10px 0 6px;
+      font-size: 12px;
+      color: var(--muted);
+      text-align: center;
+      text-transform: uppercase;
+      letter-spacing: 0.4px;
+    }
+
+    .row {
+      display: flex;
+      gap: 8px;
+      margin-top: 8px;
+    }
+
+    .link-box {
+      flex: 1;
+      border: 1px dashed var(--line);
+      background: #fbfcff;
+      padding: 9px;
+      color: var(--muted);
+      font-size: 12px;
+      text-align: center;
+    }
+
+    .button-placeholder {
+      text-align: center;
+      font-weight: 600;
+    }
+
+  </style>
+</head>
+<body>
+  <div class="tag">Login wireframe</div>
+  <main class="container">
+    <section class="screen">
+      <article class="card">
+        <h1>Tax Portal Sign In</h1>
+        <p class="subtext">Focused wireframe aligned to TOGAF and Information Architecture principles.</p>
+        <div class="wireframe-nav">
+          <a href="./tax-portal-user-management-executive-wireframe.html">Executive Wireframe</a>
+          <a href="./tax-portal-user-management-wireframe.html">User Management Wireframe</a>
+          <a href="./tax-portal-login-wireframe.html">Login Wireframe</a>
+          <a href="./tax-portal-access-control-wireframe.html">Access Control Wireframe</a>
+        </div>
+
+        <h2>Form Layout</h2>
+        <div class="flow-note">Flow Order: Identify → Authenticate → Recover (if needed) → Login (primary action)</div>
+        <div class="group-label">Step 1: Identity</div>
+        <div class="placeholder">[ User Name Label ]</div>
+        <div class="placeholder">[ Text Input Field | Placeholder Text ]</div>
+        <div class="placeholder">[ Validation Message ]</div>
+
+        <div class="group-label">Step 2: Credential Verification</div>
+        <div class="placeholder">[ Password Icon + Password Label ]</div>
+        <div class="placeholder">[ Password Input Field | Placeholder Text ]</div>
+        <div class="placeholder">[ Validation Message ]</div>
+        <div class="placeholder">[ Step 3: OTP / Authenticator Code ]</div>
+
+        <div class="group-label">Recovery and First-Time Setup</div>
+        <div class="row">
+          <div class="link-box">[ Reset Password Link ]</div>
+          <div class="link-box">[ First Time Login Link ]</div>
+        </div>
+        <div class="group-label">Primary Action (Final Step)</div>
+        <div class="placeholder button-placeholder" style="margin-top: 8px;">[ Login Button ]</div>
+      </article>
+    </section>
+  </main>
+</body>
+</html>
